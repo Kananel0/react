@@ -14,9 +14,9 @@
   "scripts": {
     "predev": "cp -r ../../build/oss-experimental/* ./node_modules/",
     "prebuild": "cp -r ../../build/oss-experimental/* ./node_modules/",
-    "dev": "parcel",
+    "dev": "node api.js && parcel",
     "build": "parcel build",
-    "start": "node dist/server.js"
+    "start": "node api.js && node dist/server.js"
   },
   "dependencies": {
     "@types/parcel-env": "^0.0.6",
